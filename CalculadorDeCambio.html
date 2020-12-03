@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio</title>
+    <style>
+        h1{
+            color: rgb(96, 185, 6);
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculador de Cambio</h1>
+    
+</body>
+<script>
+    var nome = window.prompt('Seja bem vindo! Qual o seu nome? ')
+    var Real = Number(window.prompt(`Olá, ${nome}! Me diga quanto tem em sua carteira.`))
+    var Dolar = Real / 5.18
+    var Euro = Real /  6.29
+    Real.toString
+    Euro.toString
+    Dolar.toString
+    document.writeln(`<b><h2> ${nome}. Sua cotação será essa, nas seguintes moedas:</b></h2></p>`)
+    document.writeln(`<h3>Em Real você tem ${Real.toLocaleString('pt-br', {style: 'currency', currency: 'BRl'})}</h3></p>`)
+    document.writeln(`<h3>Em Dolar você terá ${Dolar.toLocaleString('pt-br',{style: 'currency', currency: 'USD'})}</h3></p>`)
+    document.writeln(`<h3>Em Euro você terá ${Euro.toLocaleString('pt-br',{style: 'currency',currency: 'EUR'})}</h3>`)
+    
+
+</script>
+</html>
+<!-- Modelos de conversão em moedas
+Real: valor.toLocaleString('pt-br', {style: 'currency', currency: 'BLR'})
+Dollar: valor.toLocaleString('pt-br', {style: 'currency', currency: 'USD'})
+Euro: valor.toLocaleString('pt-br', {style: 'currency', currency: 'EUR'})-->
